@@ -8,6 +8,7 @@ import { connect } from 'react-redux';
 import classNames from 'classnames';
 import scrollTo from 'lib/scroll-to';
 import { localize } from 'i18n-calypso';
+import moment from 'moment-timezone';
 
 /**
  * Internal dependencies
@@ -276,7 +277,6 @@ class ActivityLogItem extends Component {
 			gmtOffset,
 			mightBackup,
 			mightRewind,
-			moment,
 			timezone,
 			translate,
 		} = this.props;
